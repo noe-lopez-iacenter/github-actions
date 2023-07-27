@@ -1,14 +1,20 @@
-name: github_actions_1
+name: Hola mundo Actions GH
+
 on:
-    push:
-        branches:
-            - main
+  push:
+    branches:
+      - main
 
 jobs:
-    first-action:
-        name: Execute_first_action
-        runs-on: ubuntu-latest
+  hola_mundo:
+    name: Imprimir Hola mundo
+    runs-on: ubuntu-latest
+    steps:
+      - name: Revisar el repo
+        uses: actions/checkout@v2
 
-        steps:
-            - name: Execute_first_action
-            run: echo "Hola Mundo"
+      - name: Install Pandas
+        run: pip3 install pandas
+
+      - name: Ejecutar codigo de python
+        run: python3 app.py
