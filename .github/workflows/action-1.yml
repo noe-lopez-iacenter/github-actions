@@ -6,9 +6,9 @@ on:
 
 jobs:
     first-action:
-        name: Execute first action
+        name: Execute_first_action
         runs-on: ubuntu-latest
 
         steps:
-        name: Execute first action
-        run: echo "Hola Mundo"
+            - name: Execute_first_action
+            run: echo "Hola Mundo"
