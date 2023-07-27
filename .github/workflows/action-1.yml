@@ -1,0 +1,14 @@
+name: github_actions_1
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    first-action:
+        name: Execute first action
+        runs-on: ubuntu-latest
+
+        steps:
+        name: Execute first action
+        run: echo "Hola Mundo"
